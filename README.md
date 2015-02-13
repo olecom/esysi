@@ -11,7 +11,7 @@ http://doc.ivantus.ru/functions_func.html
 
 Шаги
 1. Разворачиваешь у себя на веб сервере localhost, это чтобы куки отправлялись
-2. В локальных скриптах \Scripts\Base\config_common.js правишь config{ domain: "account.ivantus.ru"
+2. В локальных скриптах \Scripts\Base\config_common.js правишь config{ domain: "account2.ivantus.ru"
 тогда твои локальные скрипты будут обращаться к моему серверу
 3. Дальше закрыть все окна хрома и запустить батник, хром скажет что "Вы используете неподдеживаемый флаг..."
 4. Дальше открываем две вкладки в хроме account2.ivantus.ru и localhost
