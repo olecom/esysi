@@ -1,5 +1,5 @@
 ﻿var config = {
-    domain: location.hostname + ( location.port ? ':' + location.port: ''),
+    domain: 'account2.ivantus.ru',//location.hostname + ( location.port ? ':' + location.port: ''),
     needReloadAfterAuth: false,
     pageRegisterSite: 'SiteManager/RegisterSite',
 	translate: {},
