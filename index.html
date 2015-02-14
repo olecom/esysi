@@ -100,8 +100,15 @@
 <script src="./Scripts/Reporting/dialogSimpleDelimiterByClass.js?1136972925"></script>
 
     <script>
+		
         Ext.Loader.setPath('ManAcc', './Scripts')
         Ext.onReady(function () {
+			$.ajaxSetup({
+				crossDomain: true,
+				xhrFields: {
+					withCredentials: true
+				}
+			});
             application.init();
         });
     </script> 
