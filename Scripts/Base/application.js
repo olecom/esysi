@@ -18,7 +18,7 @@ var application = {
                     {
                         onSuccessAuth: function () {
                             if (config.needReloadAfterAuth == true) {
-                                window.location.assign('http://' + config.domain + '/');
+                                window.location.reload();//assign('http://' + config.domain + '/');
                             }
                             else {
                                 that.attacheModules();
