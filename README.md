@@ -5,7 +5,7 @@ http://esysi.com/en/instruktsii
 http://doc.ivantus.ru/functions_func.html
 
 Шаги
-1. Разворачиваем у себя на веб сервере localhost, это чтобы куки отправлялись. Обязательно localhost CORS флаги настроены на localhost.
+1. Разворачиваем у себя на веб сервере localhost:8888, это чтобы куки отправлялись. Обязательно localhost:8888 CORS флаги настроены на localhost.
 2. Дальше открываем две вкладки в хроме account2.ivantus.ru и localhost
 3. Там где account2.ivantus.ru логинимся admin qwe TEST
 4. Дальше переходим во вкладку localhost, жмем f5, должен произойти логин.
