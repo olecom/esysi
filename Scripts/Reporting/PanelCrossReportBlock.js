@@ -216,6 +216,7 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
         this.cmpRef.txtKoef = Ext.create('Ext.form.field.Text', {
             configMember: 'Koef',
             fieldLabel: "Коэффициент",
+            width: 177,
             allowBlank: false
         });
 
@@ -304,23 +305,28 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
                     this.cmpRef.fldCalcParameter,
                     this.cmpRef.fldClassParameter,
                     {
-                        xtype: 'panel',
-                        border: false,
-                        bodyStyle: 'background:none',
-                        layout: {
-                            type: 'table',
-                            columns: 2
-                        },
+                        xtype: 'container',
+                        layout: 'hbox',
                         defaults: {
-                            margin: 10
+                            margin: '0 10 0 0'
                         },
                         items: [
+                        {
+                            xtype: 'container', layout: 'vbox', items: [
                             this.cmpRef.chkTopInserting,
-                            this.cmpRef.chkVisible,
                             this.cmpRef.chkSummExcept,
+                            this.cmpRef.txtKoef
+                        ]},
+                        {
+                            xtype: 'container', layout: 'vbox', items: [
                             this.cmpRef.chkDecreaseParent,
-                            this.cmpRef.txtKoef,
+                            this.cmpRef.chkVisible,
                             this.cmpRef.summOnly
+                        ]},
+                        {
+                            xtype: 'container', layout: 'vbox', items: [
+                            { xtype: 'checkbox', fieldLabel: 'Скрывать пустые строки' }
+                        ]}
                         ]
                     },
                     this.cmpRef.gridBindedFilterList
