@@ -212,10 +212,7 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
             fieldLabel: "Уменьшать родителя",
             configMember: 'DecreaseParent'
         });
-        this.cmpRef.chkHideEmptyRows = Ext.create('Ext.form.field.Checkbox', {
-            fieldLabel: "Скрывать пустые строки",
-            configMember: 'HideEmptyRows'
-        });
+
         this.cmpRef.txtKoef = Ext.create('Ext.form.field.Text', {
             configMember: 'Koef',
             fieldLabel: "Коэффициент",
@@ -328,7 +325,7 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
                         ]},
                         {
                             xtype: 'container', layout: 'vbox', items: [
-                            this.cmpRef.chkHideEmptyRows
+                            { xtype: 'checkbox', fieldLabel: 'Скрывать пустые строки' }
                         ]}
                         ]
                     },
@@ -345,7 +342,6 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
                 that.cmpRef.summOnly,
                 that.cmpRef.txtKoef,
                 that.cmpRef.chkDecreaseParent,
-                that.cmpRef.chkHideEmptyRows,
                 that.cmpRef.chkSummExcept,
                 that.cmpRef.chkTopInserting,
                 that.cmpRef.chkVisible,
@@ -363,7 +359,6 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
                 that.cmpRef.summOnly,
                 that.cmpRef.txtKoef,
                 that.cmpRef.chkDecreaseParent,
-                that.cmpRef.chkHideEmptyRows,
                 that.cmpRef.chkSummExcept,
                 that.cmpRef.chkTopInserting,
                 that.cmpRef.chkVisible,
@@ -384,7 +379,6 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
                 that.cmpRef.summOnly,
                 that.cmpRef.txtKoef,
                 that.cmpRef.chkDecreaseParent,
-                that.cmpRef.chkHideEmptyRows,
                 that.cmpRef.chkSummExcept,
                 that.cmpRef.chkVisible,
                 that.cmpRef.chkTopInserting,
@@ -402,7 +396,6 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
 
                 that.cmpRef.txtKoef,
                 that.cmpRef.chkDecreaseParent,
-                that.cmpRef.chkHideEmptyRows,
                 that.cmpRef.chkSummExcept,
                 that.cmpRef.chkVisible,
                 that.cmpRef.chkTopInserting,
@@ -421,7 +414,6 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
                 that.cmpRef.summOnly,
                 that.cmpRef.txtKoef,
                 that.cmpRef.chkDecreaseParent,
-                that.cmpRef.chkHideEmptyRows,
                 that.cmpRef.chkSummExcept,
                 that.cmpRef.chkTopInserting,
                 that.cmpRef.chkVisible,
@@ -439,7 +431,6 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
                 that.cmpRef.summOnly,
                 that.cmpRef.txtKoef,
                 that.cmpRef.chkDecreaseParent,
-                that.cmpRef.chkHideEmptyRows,
                 that.cmpRef.chkSummExcept,
                 that.cmpRef.chkVisible,
                 that.cmpRef.comboDivideType,
