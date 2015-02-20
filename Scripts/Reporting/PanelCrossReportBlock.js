@@ -188,7 +188,7 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
             reportConfigurationId: this.configuration.ReportConfigurationId,
             reportBlockId: this.configuration.Id
         });
-		this.cmpRef.fldClassParameter = Ext.create("ManAcc.Reporting.FieldLinkClass", {
+        this.cmpRef.fldClassParameter = Ext.create("ManAcc.Reporting.FieldLinkClass", {
             fieldLabel: "Фильтровать по классу",
             configMember: 'FilterClasses',
             configMemberTitle: 'FilterClassesTitle',
@@ -216,8 +216,7 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
             configMember: 'Koef',
             fieldLabel: "Коэффициент",
             allowBlank: false
-        })
-
+        });
 
         var storeSummOnly = Ext.create('Ext.data.Store', {
             fields: ['Id', 'Name'],
@@ -302,7 +301,7 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
                     this.cmpRef.txtExpression,
                     this.cmpRef.txtFilterExpression,
                     this.cmpRef.fldCalcParameter,
-					this.cmpRef.fldClassParameter,
+                    this.cmpRef.fldClassParameter,
                     {
                         xtype: 'panel',
                         border: false,
@@ -335,106 +334,106 @@ Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
                 that.cmpRef.fldCalcParameter,
                 that.cmpRef.summOnly,
                 that.cmpRef.txtKoef,
-		        that.cmpRef.chkDecreaseParent,
-		        that.cmpRef.chkSummExcept,
-		        that.cmpRef.chkTopInserting,
-		        that.cmpRef.chkVisible,
-		        that.cmpRef.comboDivideType,
- 
-		        that.cmpRef.gridBindedFilterList,
-		        that.cmpRef.txtAlias,
-		        that.cmpRef.txtFilterExpression,
-		        that.cmpRef.txtOrder,
-		        that.cmpRef.txtTitle,
-				that.cmpRef.fldClassParameter
-	        ],
+                that.cmpRef.chkDecreaseParent,
+                that.cmpRef.chkSummExcept,
+                that.cmpRef.chkTopInserting,
+                that.cmpRef.chkVisible,
+                that.cmpRef.comboDivideType,
+
+                that.cmpRef.gridBindedFilterList,
+                that.cmpRef.txtAlias,
+                that.cmpRef.txtFilterExpression,
+                that.cmpRef.txtOrder,
+                that.cmpRef.txtTitle,
+                that.cmpRef.fldClassParameter
+            ],
             date: [
                 that.cmpRef.fldCalcParameter,
                 that.cmpRef.summOnly,
                 that.cmpRef.txtKoef,
-		        that.cmpRef.chkDecreaseParent,
-		        that.cmpRef.chkSummExcept,
+                that.cmpRef.chkDecreaseParent,
+                that.cmpRef.chkSummExcept,
                 that.cmpRef.chkTopInserting,
-		        that.cmpRef.chkVisible,
-		        that.cmpRef.comboDivideDateDelta,
-		        that.cmpRef.comboDivideType,
- 
-		        that.cmpRef.gridBindedFilterList,
-		        that.cmpRef.txtAlias,
-		        that.cmpRef.txtDivideDateMax,
-		        that.cmpRef.txtDivideDateMin,
-		        that.cmpRef.txtFilterExpression,
-		        that.cmpRef.txtOrder,
-		        that.cmpRef.txtTitle,
-				that.cmpRef.fldClassParameter
-	        ],
+                that.cmpRef.chkVisible,
+                that.cmpRef.comboDivideDateDelta,
+                that.cmpRef.comboDivideType,
+
+                that.cmpRef.gridBindedFilterList,
+                that.cmpRef.txtAlias,
+                that.cmpRef.txtDivideDateMax,
+                that.cmpRef.txtDivideDateMin,
+                that.cmpRef.txtFilterExpression,
+                that.cmpRef.txtOrder,
+                that.cmpRef.txtTitle,
+                that.cmpRef.fldClassParameter
+            ],
             dictExpression: [
                 that.cmpRef.fldCalcParameter,
                 that.cmpRef.summOnly,
                 that.cmpRef.txtKoef,
-		        that.cmpRef.chkDecreaseParent,
-		        that.cmpRef.chkSummExcept,
-		        that.cmpRef.chkVisible,
+                that.cmpRef.chkDecreaseParent,
+                that.cmpRef.chkSummExcept,
+                that.cmpRef.chkVisible,
                 that.cmpRef.chkTopInserting,
-		        that.cmpRef.comboDivideType,
- 
-		        that.cmpRef.gridBindedFilterList,
-		        that.cmpRef.txtAlias,
-		        that.cmpRef.txtExpression,
-		        that.cmpRef.txtFilterExpression,
-		        that.cmpRef.txtOrder,
-		        that.cmpRef.txtTitle,
-				that.cmpRef.fldClassParameter
-	        ],
+                that.cmpRef.comboDivideType,
+
+                that.cmpRef.gridBindedFilterList,
+                that.cmpRef.txtAlias,
+                that.cmpRef.txtExpression,
+                that.cmpRef.txtFilterExpression,
+                that.cmpRef.txtOrder,
+                that.cmpRef.txtTitle,
+                that.cmpRef.fldClassParameter
+            ],
             algorithm: [
-  
+
                 that.cmpRef.txtKoef,
-		        that.cmpRef.chkDecreaseParent,
-		        that.cmpRef.chkSummExcept,
-		        that.cmpRef.chkVisible,
+                that.cmpRef.chkDecreaseParent,
+                that.cmpRef.chkSummExcept,
+                that.cmpRef.chkVisible,
                 that.cmpRef.chkTopInserting,
-		        that.cmpRef.comboAlgorithm,
-		        that.cmpRef.comboDivideType,
- 
-		        that.cmpRef.gridBindedFilterList,
-		        that.cmpRef.txtAlias,
-		        that.cmpRef.txtFilterExpression,
-		        that.cmpRef.txtOrder,
-		        that.cmpRef.txtTitle,
-				that.cmpRef.fldClassParameter
-	        ],
+                that.cmpRef.comboAlgorithm,
+                that.cmpRef.comboDivideType,
+
+                that.cmpRef.gridBindedFilterList,
+                that.cmpRef.txtAlias,
+                that.cmpRef.txtFilterExpression,
+                that.cmpRef.txtOrder,
+                that.cmpRef.txtTitle,
+                that.cmpRef.fldClassParameter
+            ],
             link: [
                 that.cmpRef.fldCalcParameter,
                 that.cmpRef.summOnly,
                 that.cmpRef.txtKoef,
-		        that.cmpRef.chkDecreaseParent,
-		        that.cmpRef.chkSummExcept,
-		        that.cmpRef.chkTopInserting,
-		        that.cmpRef.chkVisible,
-		        that.cmpRef.comboDivideType,
-		        that.cmpRef.fldLinkReportBlock,
-		        that.cmpRef.gridBindedFilterList,
-		        that.cmpRef.txtAlias,
-		        that.cmpRef.txtFilterExpression,
-		        that.cmpRef.txtOrder,
-		        that.cmpRef.txtTitle,
-				that.cmpRef.fldClassParameter
-	        ],
+                that.cmpRef.chkDecreaseParent,
+                that.cmpRef.chkSummExcept,
+                that.cmpRef.chkTopInserting,
+                that.cmpRef.chkVisible,
+                that.cmpRef.comboDivideType,
+                that.cmpRef.fldLinkReportBlock,
+                that.cmpRef.gridBindedFilterList,
+                that.cmpRef.txtAlias,
+                that.cmpRef.txtFilterExpression,
+                that.cmpRef.txtOrder,
+                that.cmpRef.txtTitle,
+                that.cmpRef.fldClassParameter
+            ],
             recordclass: [
                 that.cmpRef.fldCalcParameter,
                 that.cmpRef.summOnly,
                 that.cmpRef.txtKoef,
-		        that.cmpRef.chkDecreaseParent,
-		        that.cmpRef.chkSummExcept,
-		        that.cmpRef.chkVisible,
-		        that.cmpRef.comboDivideType,
-		        that.cmpRef.gridBindedFilterList,
-		        that.cmpRef.txtAlias,
-		        that.cmpRef.txtExpression,
-		        that.cmpRef.txtFilterExpression,
-		        that.cmpRef.txtOrder,
-		        that.cmpRef.txtTitle
-	        ]
+                that.cmpRef.chkDecreaseParent,
+                that.cmpRef.chkSummExcept,
+                that.cmpRef.chkVisible,
+                that.cmpRef.comboDivideType,
+                that.cmpRef.gridBindedFilterList,
+                that.cmpRef.txtAlias,
+                that.cmpRef.txtExpression,
+                that.cmpRef.txtFilterExpression,
+                that.cmpRef.txtOrder,
+                that.cmpRef.txtTitle
+            ]
         };
     },
     configToVcState: function (newConfiguration) {
