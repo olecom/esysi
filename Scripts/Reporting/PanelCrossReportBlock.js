@@ -2,6 +2,7 @@
 
 Ext.define("ManAcc.Reporting.PanelCrossReportBlock", {
     extend: 'ManAcc.Common.VCCECPanel',
+    itemId: 'PanelCrossReportBlock',
     layout: {
         type: 'hbox',
         align: 'stretch'
